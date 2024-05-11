@@ -1,0 +1,292 @@
+@import "../utils/mixins", "../utils/placeholders", "../utils/variable";
+
+.explore {
+    background-image: url('/src/image/raster/section7-explore/bg-image-explore.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 128px 0 0 0;
+    &__content {
+        padding: 72px 0 72px 0;
+        text-align: center;
+        &-title {
+            color: $white-reviews;
+            font-size: 24px;
+            @extend %font-family-style;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: -0.72px;
+            text-transform: uppercase;
+        }
+        &-text {
+            color: $white-reviews;
+            font-size: 14px;
+            @extend %font-family-style;
+            font-weight: 400;
+            line-height: 18px; 
+            letter-spacing: -0.28px;
+            padding: 24px 0 24px 0;
+        }
+        &-button {
+            color: $white-reviews;
+            font-size: 18px;
+            @extend %font-family-style;
+            font-weight: 600;
+            line-height: normal;
+            padding: 14px 40px;
+            border-radius: 100px;
+            background-color: $orange-reviews;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: transform 0.3s linear, color 0.2s linear;
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: $white-reviews;
+              z-index: -1;
+              transform: translateX(100%);
+              transition: transform 0.3s linear;
+              border-radius: 100px;
+            }
+            &:hover::before {
+              transform: translateX(0);
+            }
+            &:hover {
+              transform: scale(0.92);
+              color: $black-reviews;
+            }
+        }
+    }
+}
+
+.modal-header-explore {
+    border-bottom: none;
+}
+.cross {
+    --bs-btn-close-bg: none;
+    width: 28px;
+    height: 28px;
+    position: relative;
+    --bs-btn-close-opacity: 1;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: $white-reviews;
+        top: 34%;
+        left: 21px;
+        transform: rotate(314deg);
+    }
+    &::before {
+        height: 48%;
+    }
+    &::after {
+        height: 48%;
+        transform: rotate(44deg);
+    }
+}
+
+.modal-content-explore {
+    background-image: url('/src/image/raster/section7-explore/explore-bg-modal.png');
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+    background-size: contain;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.modal-body-explore {
+    text-align: start;
+    padding: 170px 20px 20px 20px;
+    &__title {
+        color: $light-black-reviews;
+        font-size: 24px;
+        @extend %font-family-style;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: -0.72px;
+        text-transform: uppercase;
+        padding: 0 0 28px 0;
+        &-orange {
+            color: $orange-reviews;
+        }
+    }
+    &__form {
+        @include d-flex-items($d-flex:flex, $items:center); 
+        gap: 8px;
+        &-input {
+            width: 313px;
+            height: 52px;
+            padding: 14px 24px;
+            border-radius: 30px;
+            border: 1.5px solid $modal-reviews-form-border;
+            outline: none;
+            transition: transform .3s linear, box-shadow .3s linear;
+            &:hover {
+              transform: scale(0.98);
+            }
+            &:focus {
+              box-shadow: 0px 2px 0px 0px $orange-reviews;
+            }
+            &::placeholder {
+              color: $modal-reviews-input-placeholder;
+              font-size: 18px;
+            @extend %font-family-style;
+              font-weight: 400;
+              line-height: normal;
+              letter-spacing: -0.36px;
+            }
+        }
+        &-button {
+            color: $white-reviews;
+            font-size: 14px;
+            @extend %font-family-style;
+            font-weight: 600;
+            line-height: normal;
+            padding: 17px 40px;
+            border-radius: 100px;
+            background-color: $orange-reviews;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: transform 0.3s linear, color 0.2s linear;
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: $white-reviews;
+              z-index: -1;
+              transform: translateY(100%);
+              transition: transform 0.3s linear;
+              border: 1px solid $orange-reviews;
+              border-radius: 100px;
+            }
+            &:hover::before {
+              transform: translateY(0);
+            }
+            &:hover {
+              transform: scale(0.92);
+              color: $black-reviews;
+            }
+        }
+    }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .explore {
+        background-image: url('/src/image/raster/section7-explore/bg-image-explore2x.png');
+    }
+    .modal-content-explore {
+        background-image: url('/src/image/raster/section7-explore/explore-bg-modal2x.png');
+    }
+}
+
+@media (max-width: 1200px) {
+    .explore {
+        background-image: url('/src/image/raster/section7-explore/bg-image-explore-tablet.png');
+        margin: 100px 0 0 0;
+    }
+    .modal-content-explore {
+        background-image: url('/src/image/raster/section7-explore/explore-bg-modal-tablet.png');
+        width: 311px;
+    }
+    @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .explore {
+            background-image: url('/src/image/raster/section7-explore/bg-image-explore-tablet2x.png');
+        }
+        .modal-content-explore {
+            background-image: url('/src/image/raster/section7-explore/explore-bg-modal-tablet2x.png');
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .explore {
+        background-image: url('/src/image/raster/section7-explore/bg-image-explore-mobile.png');
+        margin: 72px 0 0 0;
+    }
+    .modal-content-explore {
+        background-image: url('/src/image/raster/section7-explore/explore-bg-modal-mobile.png');
+    }
+    @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .explore {
+            background-image: url('/src/image/raster/section7-explore/bg-image-explore-mobile2x.png');
+        }
+        .modal-content-explore {
+            background-image: url('/src/image/raster/section7-explore/explore-bg-modal-mobile2x.png');
+        }
+    }
+    .explore__content-title {
+        font-size: 20px;
+    }
+    .explore__content-button {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+    .modal-body-explore {
+        padding: 250px 15px 15px 15px;
+    }
+    .modal-body-explore__title {
+        font-size: 20px;
+        padding: 0 0 24px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-body-explore {
+        padding: 170px 15px 15px 15px;
+    }
+    .modal-body-explore__form {
+        gap: 0;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .modal-body-explore__form-input {
+        width: 286px;
+        height: 47px;
+        padding: 14px 28px;
+        border: 1.5px solid $modal-reviews-form-border;
+        &:hover {
+            transform: scale(1);
+        }
+        &:focus {
+            box-shadow: 0px 5.445px 5.445px 0px $modal-reviews-form-box-shadow;
+        }
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+    .modal-body-explore__form-button {
+        position: absolute;
+        bottom: 1px;
+        left: 75%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        padding: 14px 28px;
+        &::before {
+            display: none;
+          }
+          &:hover::before {
+            display: none;
+          }
+          &:hover {
+            transform: scale(1.1);
+            color: $white-reviews;
+        }
+    }
+}

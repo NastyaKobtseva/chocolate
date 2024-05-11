@@ -1,0 +1,145 @@
+@import "../utils/mixins", "../utils/placeholders", "../utils/variable";
+
+.footer {
+    background: $bg-footer;
+}
+.delicious {
+    @include flex-j-content($flex:flex, $js-content:space-between);
+    padding: 50px 0px 0px;
+    &__title {
+        color: $white-reviews;
+        font-size: 28px;
+        @extend %font-family-style;
+        font-weight: 500;
+        line-height: 34px;
+        letter-spacing: -0.56px;
+        &-orange {
+            color: $orange-reviews;
+        }
+    }
+}
+
+.simplychoc {
+    display: flex;
+    gap: 63px;
+    &__contact {
+        color: $white-reviews;
+        font-size: 14px;
+        @extend %font-family-style;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 0 0 14px 0;
+    }
+    &__social {
+        display: flex;
+        gap: 18px;
+        &-insta {
+            stroke: $white-reviews;
+            transition: stroke .3s linear, transform .3s linear;
+            &:hover {
+                transform: scale(1.3) translateY(-2px);
+                stroke: $orange-reviews;
+            }
+        }
+        &-twitter {
+            stroke: $white-reviews;
+            transition: stroke .3s linear, transform .3s linear;
+            &:hover {
+                transform: scale(1.3) translateY(-2px);
+                stroke: $orange-reviews;
+            }
+        }
+    }
+    
+}
+.details {
+    &__contact {
+        color: $white-reviews;
+        font-size: 14px;
+        @extend %font-family-style;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 0 0 14px 0;
+    }
+    &__address {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    &__link {
+        color: $white-reviews;
+        font-size: 14px;
+        @extend %font-family-style;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.28px;
+        transition: transform .3s linear, color .3s linear;
+        &:hover {
+            transform: translateX(10px);
+            color: $orange-reviews;
+        }
+    }
+}
+
+.day-info {
+    &__list {
+        display: flex;
+        gap: 24px;
+        padding: 82px 0 50px 0;
+        flex-wrap: wrap;
+        &-link {
+            color: $white-reviews;
+            font-size: 14px;
+            @extend %font-family-style;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: -0.28px;
+            transition: color .3s linear;
+            &:hover {
+                color: $orange-reviews;
+            }
+        }
+    }
+    &__list-item {
+        transition: transform .3s linear;
+        &:hover {
+            transform: scale(0.98) translateY(-3px);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .delicious {
+        gap: 290px;
+    }
+    .simplychoc {
+        gap: 30px;
+    }
+    .day-info__list {
+        padding: 74px 0 50px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .delicious__title {
+        font-size: 24px;
+    }
+    .delicious {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .simplychoc {
+        gap: 113px;
+    }
+    .day-info__list {
+        gap: 18px;
+        padding: 64px 0 32px 0;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .simplychoc {
+        gap: 50px;
+    }
+}
