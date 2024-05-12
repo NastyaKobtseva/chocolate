@@ -3,16 +3,645 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/src/image/vector/chocolate.svg" />
+    <link rel="icon" type="image/svg+xml" href="/src/image/vector/chocolate.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Seymour+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Chocolate</title>
 </head>
 <body>
     <main class="main">
+        <!-- section 3 -->
+        <section class="taste">
+            <div class="container taste__content">
+                <div class="taste__text-box">
+                    <h3 class="section-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="section-title__marker">TASTE</span> SENSATION</h3>
+                    <p class="taste__paragraf">
+                        At Simply Chocolate, we believe that the secret to exceptional chocolate 
+                        is in the details. From the sourcing of the finest ingredients to the 
+                        careful crafting of each individual piece, every step of our process adds 
+                        up to one exceptional taste sensation.
+                    </p>
+                </div>
+                <div class="taste__card-group">
+                    <div class="taste-card">
+                        <img class="taste-card__image d-none d-lg-block" src="./src/image/raster/section_taste/chocolate.png" srcset="./src/image/raster/section_taste/chocolate.png 1x, ./src/image/raster/section_taste/chocolate@2x.png 2x" alt="Chocolate">
+                        <img class="taste-card__image d-lg-none" src="./src/image/raster/section_taste/chocolate_tablet-mobile.png" srcset="./src/image/raster/section_taste/chocolate_tablet-mobile.png 1x, ./src/image/raster/section_taste/chocolate_tablet-mobile@2x.png 2x" alt="Chocolate">
+                        <h4 class="taste-card__title">MILK CHOCOLATE</h4>
+                        <div class="taste-card__layer--hover">
+                            <div class="taste-card__main-info--hover">
+                                <h4 class="taste-card__title--hover">Milk chocolate</h4>
+                                <div class="taste-card__btn-group--hover">
+                                    <a class="taste-card__just-btn--hover" href="#">chocolate</a>
+                                    <a class="taste-card__just-btn--hover" href="#">the benefits</a>
+                                </div>
+                            </div>
+                            <div class="taste-card__paragraf-box--hover">
+                                <p class="taste-card__paragraf--hover">
+                                    Milk chocolate is a solid 
+                                    chocolate confectionery 
+                                    containing cocoa, sugar and 
+                                    milk. It is the most consumed 
+                                    type of chocolate. Chocolate 
+                                    was originally sold and 
+                                    consumed as a beverage in 
+                                    pre-Columbian times. 
+                                    Although four-fifths of
+                                    all milk chocolate is sold
+                                    in the United States and 
+                                    Europe, increasingly large
+                                    amounts are consumed 
+                                    in China and Latin America.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taste-card">
+                        <img class="taste-card__image d-none d-lg-block" src="./src/image/raster/section_taste/milk.png" srcset="./src/image/raster/section_taste/milk.png 1x, ./src/image/raster/section_taste/milk@2x.png 2x" alt="Milk">
+                        <img class="taste-card__image d-lg-none" src="./src/image/raster/section_taste/milk_tablet-mobile.png" srcset="./src/image/raster/section_taste/milk_tablet-mobile.png 1x, ./src/image/raster/section_taste/milk_tablet-mobile@2x.png 2x" alt="Milk">
+                        <h4 class="taste-card__title">Milk</h4>
+                        <div class="taste-card__layer--hover">
+                            <div class="taste-card__main-info--hover">
+                                <h4 class="taste-card__title--hover">Milk</h4>
+                                <div class="taste-card__btn-group--hover">
+                                    <a class="taste-card__just-btn--hover" href="#">milk </a>
+                                    <a class="taste-card__just-btn--hover" href="#">the benefits</a>
+                                </div>
+                            </div>
+                            <div class="taste-card__paragraf-box--hover">
+                                <p class="taste-card__paragraf--hover">
+                                    Milk is a white liquid food 
+                                    produced by the mammary 
+                                    glands of mammals. It is the 
+                                    primary source of nutrition for 
+                                    young mammals (including 
+                                    breastfed human infants) 
+                                    before they are able to digest 
+                                    solid food.Early-lactation milk, 
+                                    which is called colostrum, 
+                                    contains antibodies that 
+                                    strengthen the immune system,  
+                                    and thus reduces the risk of 
+                                    many diseases. Milk contains 
+                                    many nutrients, including 
+                                    protein and lactose.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taste-card">
+                        <img class="taste-card__image d-none d-lg-block" src="./src/image/raster/section_taste/nuts.png" srcset="./src/image/raster/section_taste/nuts.png 1x, ./src/image/raster/section_taste/nuts@2x.png 2x" alt="Nuts">
+                        <img class="taste-card__image d-lg-none" src="./src/image/raster/section_taste/nuts_tablet-mobile.png" srcset="./src/image/raster/section_taste/nuts_tablet-mobile.png 1x, ./src/image/raster/section_taste/nuts_tablet-mobile@2x.png 2x" alt="Nuts">
+                        <h4 class="taste-card__title">Nuts</h4>
+                        <div class="taste-card__layer--hover">
+                            <div class="taste-card__main-info--hover">
+                                <h4 class="taste-card__title--hover">Nuts</h4>
+                                <div class="taste-card__btn-group--hover">
+                                    <a class="taste-card__just-btn--hover" href="#">nuts</a>
+                                    <a class="taste-card__just-btn--hover" href="#">the benefits</a>
+                                </div>
+                            </div>
+                            <div class="taste-card__paragraf-box--hover">
+                                <p class="taste-card__paragraf--hover">
+                                    Almonds, pistachios, and 
+                                    walnuts are some types of nuts 
+                                    that contain healthy nutrients. 
+                                    When eaten as part of a 
+                                    nutrient-dense diet, these 9 
+                                    nuts may offer benefits such as 
+                                    reducing your risk of heart 
+                                    disease. They’re a good source 
+                                    of fiber, healthy fats, and 
+                                    plant protein. Plus, they’re 
+                                    great on their own, paired with 
+                                    fruit, or added to dishes like 
+                                    salads, desserts, and grains.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taste-card">
+                        <img class="taste-card__image d-none d-lg-block" src="./src/image/raster/section_taste/semi-sweet-chocolate.png" srcset="./src/image/raster/section_taste/semi-sweet-chocolate.png 1x, ./src/image/raster/section_taste/semi-sweet-chocolate@2x.png 2x" alt="Chocolate">
+                        <img class="taste-card__image d-lg-none" src="./src/image/raster/section_taste/semi-sweet-chocolate_tablet-mobile.png" srcset="./src/image/raster/section_taste/semi-sweet-chocolate_tablet-mobile.png 1x, ./src/image/raster/section_taste/semi-sweet-chocolate_tablet-mobile@2x.png 2x" alt="Chocolate">
+                        <h4 class="taste-card__title">SEMI - SWEET CHOCOLATE</h4>
+                        <div class="taste-card__layer--hover">
+                            <div class="taste-card__main-info--hover">
+                                <h4 class="taste-card__title--hover">semi - sweet chocolate</h4>
+                                <div class="taste-card__btn-group--hover">
+                                    <a class="taste-card__just-btn--hover" href="#">sweet chocolate</a>
+                                    <a class="taste-card__just-btn--hover" href="#">the benefits</a>
+                                </div>
+                            </div>
+                            <div class="taste-card__paragraf-box--hover">
+                                <p class="taste-card__paragraf--hover">
+                                    Semi-sweet chocolate has a 
+                                    cocoa solid content of 35 to 
+                                    65%. One of the best ways to 
+                                    gain an understanding of this 
+                                    type of chocolate is to compare 
+                                    it to a different type of 
+                                    chocolate. Semisweet is darker 
+                                    than milk chocolate. In a taste 
+                                    comparison, it has a slightly 
+                                    bitter taste whereas milk 
+                                    chocolate is sweeter and more 
+                                    mellow. This delectable flavor 
+                                    of chocolate is very versatile. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 3 end -->
         <!-- section 5 -->
+        <section class="our-products">
+            <div class="container our-products__content">
+                <h3 class="section-title">OUR <span class="section-title__marker">PRODUCTS</span></h3>
+                <div class="swiper our-products__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="our-products__slide">
+                                <a class="products-card" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-1.jpg" srcset="./src/image/raster/section_our-products/chocolate-1.jpg 1x, ./src/image/raster/section_our-products/chocolate-1@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">orange</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-2.jpg" srcset="./src/image/raster/section_our-products/chocolate-2.jpg 1x, ./src/image/raster/section_our-products/chocolate-2@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">APPLE&CRANBERRY</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-3.jpg" srcset="./src/image/raster/section_our-products/chocolate-3.jpg 1x, ./src/image/raster/section_our-products/chocolate-3@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">lime&sea salt</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-4.jpg" srcset="./src/image/raster/section_our-products/chocolate-4.jpg 1x, ./src/image/raster/section_our-products/chocolate-4@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">pineapple</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-products__slide">
+                                <a class="products-card d-md-none d-flex" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-2.jpg" srcset="./src/image/raster/section_our-products/chocolate-2.jpg 1x, ./src/image/raster/section_our-products/chocolate-2@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">APPLE&CRANBERRY</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-none d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-3.jpg" srcset="./src/image/raster/section_our-products/chocolate-3.jpg 1x, ./src/image/raster/section_our-products/chocolate-3@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">lime&sea salt</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-none d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-4.jpg" srcset="./src/image/raster/section_our-products/chocolate-4.jpg 1x, ./src/image/raster/section_our-products/chocolate-4@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">pineapple</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>                        
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-5.jpg" srcset="./src/image/raster/section_our-products/chocolate-5.jpg 1x, ./src/image/raster/section_our-products/chocolate-5@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-6.jpg" srcset="./src/image/raster/section_our-products/chocolate-6.jpg 1x, ./src/image/raster/section_our-products/chocolate-6@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">honey</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-7.jpg" srcset="./src/image/raster/section_our-products/chocolate-7.jpg 1x, ./src/image/raster/section_our-products/chocolate-7@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Roasted fruits</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-8.jpg" srcset="./src/image/raster/section_our-products/chocolate-8.jpg 1x, ./src/image/raster/section_our-products/chocolate-8@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-products__slide">
+                                <a class="products-card d-lg-none d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-5.jpg" srcset="./src/image/raster/section_our-products/chocolate-5.jpg 1x, ./src/image/raster/section_our-products/chocolate-5@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-none d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-6.jpg" srcset="./src/image/raster/section_our-products/chocolate-6.jpg 1x, ./src/image/raster/section_our-products/chocolate-6@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">honey</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-1.jpg" srcset="./src/image/raster/section_our-products/chocolate-1.jpg 1x, ./src/image/raster/section_our-products/chocolate-1@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">orange</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-2.jpg" srcset="./src/image/raster/section_our-products/chocolate-2.jpg 1x, ./src/image/raster/section_our-products/chocolate-2@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">APPLE&CRANBERRY</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-md-none d-flex" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-3.jpg" srcset="./src/image/raster/section_our-products/chocolate-3.jpg 1x, ./src/image/raster/section_our-products/chocolate-3@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">lime&sea salt</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-4.jpg" srcset="./src/image/raster/section_our-products/chocolate-4.jpg 1x, ./src/image/raster/section_our-products/chocolate-4@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">pineapple</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-products__slide">
+                                <a class="products-card d-md-none d-flex" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-4.jpg" srcset="./src/image/raster/section_our-products/chocolate-4.jpg 1x, ./src/image/raster/section_our-products/chocolate-4@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">pineapple</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-5.jpg" srcset="./src/image/raster/section_our-products/chocolate-5.jpg 1x, ./src/image/raster/section_our-products/chocolate-5@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-6.jpg" srcset="./src/image/raster/section_our-products/chocolate-6.jpg 1x, ./src/image/raster/section_our-products/chocolate-6@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">honey</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-7.jpg" srcset="./src/image/raster/section_our-products/chocolate-7.jpg 1x, ./src/image/raster/section_our-products/chocolate-7@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Roasted fruits</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-8.jpg" srcset="./src/image/raster/section_our-products/chocolate-8.jpg 1x, ./src/image/raster/section_our-products/chocolate-8@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> 
+                        <div class="swiper-slide">
+                            <div class="our-products__slide">
+                                <a class="products-card d-md-none d-flex" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-5.jpg" srcset="./src/image/raster/section_our-products/chocolate-5.jpg 1x, ./src/image/raster/section_our-products/chocolate-5@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-1.jpg" srcset="./src/image/raster/section_our-products/chocolate-1.jpg 1x, ./src/image/raster/section_our-products/chocolate-1@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">orange</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-2.jpg" srcset="./src/image/raster/section_our-products/chocolate-2.jpg 1x, ./src/image/raster/section_our-products/chocolate-2@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">APPLE&CRANBERRY</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-3.jpg" srcset="./src/image/raster/section_our-products/chocolate-3.jpg 1x, ./src/image/raster/section_our-products/chocolate-3@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">lime&sea salt</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-4.jpg" srcset="./src/image/raster/section_our-products/chocolate-4.jpg 1x, ./src/image/raster/section_our-products/chocolate-4@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">pineapple</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-products__slide">
+                                <a class="products-card d-lg-none d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-3.jpg" srcset="./src/image/raster/section_our-products/chocolate-3.jpg 1x, ./src/image/raster/section_our-products/chocolate-3@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">lime&sea salt</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-none d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-4.jpg" srcset="./src/image/raster/section_our-products/chocolate-4.jpg 1x, ./src/image/raster/section_our-products/chocolate-4@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">pineapple</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>                        
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-5.jpg" srcset="./src/image/raster/section_our-products/chocolate-5.jpg 1x, ./src/image/raster/section_our-products/chocolate-5@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-md-none d-flex" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-6.jpg" srcset="./src/image/raster/section_our-products/chocolate-6.jpg 1x, ./src/image/raster/section_our-products/chocolate-6@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">honey</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-7.jpg" srcset="./src/image/raster/section_our-products/chocolate-7.jpg 1x, ./src/image/raster/section_our-products/chocolate-7@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Roasted fruits</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-8.jpg" srcset="./src/image/raster/section_our-products/chocolate-8.jpg 1x, ./src/image/raster/section_our-products/chocolate-8@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-products__slide">
+                                <a class="products-card d-lg-none d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-5.jpg" srcset="./src/image/raster/section_our-products/chocolate-5.jpg 1x, ./src/image/raster/section_our-products/chocolate-5@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-none d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-6.jpg" srcset="./src/image/raster/section_our-products/chocolate-6.jpg 1x, ./src/image/raster/section_our-products/chocolate-6@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">honey</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-md-none d-flex" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-7.jpg" srcset="./src/image/raster/section_our-products/chocolate-7.jpg 1x, ./src/image/raster/section_our-products/chocolate-7@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Roasted fruits</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-1.jpg" srcset="./src/image/raster/section_our-products/chocolate-1.jpg 1x, ./src/image/raster/section_our-products/chocolate-1@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">orange</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-2.jpg" srcset="./src/image/raster/section_our-products/chocolate-2.jpg 1x, ./src/image/raster/section_our-products/chocolate-2@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">APPLE&CRANBERRY</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-3.jpg" srcset="./src/image/raster/section_our-products/chocolate-3.jpg 1x, ./src/image/raster/section_our-products/chocolate-3@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">lime&sea salt</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-4.jpg" srcset="./src/image/raster/section_our-products/chocolate-4.jpg 1x, ./src/image/raster/section_our-products/chocolate-4@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">pineapple</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-products__slide">
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-5.jpg" srcset="./src/image/raster/section_our-products/chocolate-5.jpg 1x, ./src/image/raster/section_our-products/chocolate-5@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">45 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-lg-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-6.jpg" srcset="./src/image/raster/section_our-products/chocolate-6.jpg 1x, ./src/image/raster/section_our-products/chocolate-6@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">honey</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">50 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card d-md-flex d-none" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-7.jpg" srcset="./src/image/raster/section_our-products/chocolate-7.jpg 1x, ./src/image/raster/section_our-products/chocolate-7@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Roasted fruits</h4>
+                                            <h5 class="products-card__subtitle">Dark chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">66 UAH</h4>
+                                    </div>
+                                </a>
+                                <a class="products-card" href="#">
+                                    <img class="products-card__image" src="./src/image/raster/section_our-products/chocolate-8.jpg" srcset="./src/image/raster/section_our-products/chocolate-8.jpg 1x, ./src/image/raster/section_our-products/chocolate-8@2x.jpg 2x" alt="Product">
+                                    <div class="products-card__info-box">
+                                        <div class="products-card__text-group">
+                                            <h4 class="products-card__title">Classic</h4>
+                                            <h5 class="products-card__subtitle">Milk chocolate</h5>
+                                        </div>
+                                        <h4 class="products-card__price">54 UAH</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>                   
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- section 5 end -->
+        <!-- section 6 -->
         <section class="sellers">
             <div class="container sellers__content">
                 <h2 class="sellers__content-title">
@@ -20,9 +649,9 @@
                 </h2>
                 <div class="crazy">
                     <div class="discover">
-                        <img src="./src/image/raster/section5-sellers/sellers-photo1.png" srcset="./src/image/raster/section5-sellers/sellers-photo1.png 1x, ./src/image/raster/section5-sellers/sellers-photo1@2x.png 2x" alt="ups" class="discover__photo">
-                        <img src="./src/image/raster/section5-sellers/sellers-photo2.png" srcset="./src/image/raster/section5-sellers/sellers-photo2.png 1x, ./src/image/raster/section5-sellers/sellers-photo2@2x.png 2x" alt="ups" class="discover__photo">
-                        <img src="./src/image/raster/section5-sellers/sellers-photo3.png" srcset="./src/image/raster/section5-sellers/sellers-photo3.png 1x, ./src/image/raster/section5-sellers/sellers-photo3@2x.png 2x" alt="ups" class="discover__photo discover__hidden">
+                        <img src="./src/image/raster/section_top-sellers/sellers-photo1.png" srcset="./src/image/raster/section_top-sellers/sellers-photo1.png 1x, ./src/image/raster/section_top-sellers/sellers-photo1@2x.png 2x" alt="ups" class="discover__photo">
+                        <img src="./src/image/raster/section_top-sellers/sellers-photo2.png" srcset="./src/image/raster/section_top-sellers/sellers-photo2.png 1x, ./src/image/raster/section_top-sellers/sellers-photo2@2x.png 2x" alt="ups" class="discover__photo">
+                        <img src="./src/image/raster/section_top-sellers/sellers-photo3.png" srcset="./src/image/raster/section_top-sellers/sellers-photo3.png 1x, ./src/image/raster/section_top-sellers/sellers-photo3@2x.png 2x" alt="ups" class="discover__photo discover__hidden">
                     </div>
                     <div class="originates">
                         <p class="originates__text">
@@ -31,15 +660,120 @@
                             thousands of years and was first discovered by the Native
                             American tribe called the Mayans.
                         </p>
-                        <button class="originates__button">
+                        <button class="btn originates__button" type="button" data-bs-toggle="modal" data-bs-target="#buynow">
                             Buy now
                         </button>
+                        <div class="modal modal-buy" id="buynow" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content modal-buy__content">
+                                    <div class="modal-buy__header">
+                                        <h3 class="section-title">BUY <span class="section-title__marker">NOW</span></h3>
+                                        <button type="button" class="btn-close modal-buy__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <form class="buy-now">
+                                        <div class="buy-now__products-group d-md-flex d-none">
+                                            <div class="product-card">
+                                                <input class="product-card__radio" type="radio" name="radio" id="select-radio1">
+                                                <label class="product-card__label" for="select-radio1">
+                                                    <img class="product-card__image" src="./src/image/raster/section_top-sellers/chocolate-dark.jpg" srcset="./src/image/raster/section_top-sellers/chocolate-dark.jpg 1x, ./src/image/raster/section_top-sellers/chocolate-dark@2x.jpg 2x" alt="CHOCOLATE">
+                                                </label>
+                                                <h4 class="product-card__weight">100 g</h4>
+                                            </div>
+                                            <div class="product-card">
+                                                <input class="product-card__radio" type="radio" name="radio" id="select-radio2" checked>
+                                                <label class="product-card__label" for="select-radio2">
+                                                    <img class="product-card__image" src="./src/image/raster/section_top-sellers/chocolate-nuts.jpg" srcset="./src/image/raster/section_top-sellers/chocolate-nuts.jpg 1x, ./src/image/raster/section_top-sellers/chocolate-nuts@2x.jpg 2x" alt="CHOCOLATE">
+                                                </label>
+                                                <h4 class="product-card__weight">200 g</h4>
+                                            </div>
+                                            <div class="product-card">
+                                                <input class="product-card__radio" type="radio" name="radio" id="select-radio3">
+                                                <label class="product-card__label" for="select-radio3">
+                                                    <img class="product-card__image" src="./src/image/raster/section_top-sellers/chocolate-standard.jpg" srcset="./src/image/raster/section_top-sellers/chocolate-standard.jpg 1x, ./src/image/raster/section_top-sellers/chocolate-standard@2x.jpg 2x" alt="CHOCOLATE">
+                                                </label>
+                                                <h4 class="product-card__weight">300 g</h4>
+                                            </div>
+                                        </div>  
+                                        <div class="swiper buy-now__swiper d-md-none">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="product-card">
+                                                        <input class="product-card__radio" type="radio" name="radio" id="select-radio1-1">
+                                                        <label class="product-card__label" for="select-radio1-1">
+                                                            <img class="product-card__image" src="./src/image/raster/section_top-sellers/chocolate-dark.jpg" srcset="./src/image/raster/section_top-sellers/chocolate-dark.jpg 1x, ./src/image/raster/section_top-sellers/chocolate-dark@2x.jpg 2x" alt="CHOCOLATE">
+                                                        </label>
+                                                        <h4 class="product-card__weight">100 g</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product-card">
+                                                        <input class="product-card__radio" type="radio" name="radio" id="select-radio2-2" checked>
+                                                        <label class="product-card__label" for="select-radio2-2">
+                                                            <img class="product-card__image" src="./src/image/raster/section_top-sellers/chocolate-nuts.jpg" srcset="./src/image/raster/section_top-sellers/chocolate-nuts.jpg 1x, ./src/image/raster/section_top-sellers/chocolate-nuts@2x.jpg 2x" alt="CHOCOLATE">
+                                                        </label>
+                                                        <h4 class="product-card__weight">200 g</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product-card">
+                                                        <input class="product-card__radio" type="radio" name="radio" id="select-radio3-3">
+                                                        <label class="product-card__label" for="select-radio3-3">
+                                                            <img class="product-card__image" src="./src/image/raster/section_top-sellers/chocolate-standard.jpg" srcset="./src/image/raster/section_top-sellers/chocolate-standard.jpg 1x, ./src/image/raster/section_top-sellers/chocolate-standard@2x.jpg 2x" alt="CHOCOLATE">
+                                                        </label>
+                                                        <h4 class="product-card__weight">300 g</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <div class="buy-now__registration">
+                                            <div class="buy-now__label-container">
+                                                <h5 class="buy-now__label-title">Personal information</h5>
+                                                <div class="buy-now__input-group">
+                                                    <label class="buy-now__label-info" for="user-name">
+                                                        <input class="buy-now__info-input" type="text" id="user-name" name="name" placeholder="Name" required>
+                                                    </label>
+                                                    <label class="buy-now__label-info" for="user-surname">
+                                                        <input class="buy-now__info-input" type="text" id="user-surname" name="surname" placeholder="Surname" required>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <label class="buy-now__label" for="user-email">
+                                                Email
+                                                <input class="buy-now__input" type="email" id="user-email" name="email" placeholder="Enter your email" required>
+                                            </label>
+                                            <div class="buy-now__label-container">
+                                                <h5 class="buy-now__label-title">Phone number</h5>
+                                                <div class="buy-now__tel-container">
+                                                    <div class="buy-now__country-group">
+                                                        <img class="buy-now__country-img" src="./src/image/vector/ukraine-flag.svg" alt="Ukraine flag">
+                                                        <h4 class="buy-now__country-number">+380</h4>
+                                                    </div>
+                                                    <label class="buy-now__label-tel" for="user-tel">
+                                                        <input class="buy-now__input-tel" type="tel" id="user-tel" name="tel" placeholder="Phone number" required>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <label class="buy-now__label" for="user-card">
+                                                Card number
+                                                <input class="buy-now__input buy-now__input-card" type="text" id="user-card" name="card" placeholder="Enter card" required>
+                                            </label>
+                                            <label class="buy-now__label" for="user-commit">
+                                                Comment
+                                                <textarea class="buy-now__user-commit" name="text" id="user-commit" placeholder="Enter text"></textarea>
+                                            </label>
+                                            <button class="buy-now__btn" type="submit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- section 5 end -->
-        <!-- section 6 -->
+        <!-- section 6 end -->
+        <!-- section 7 -->
         <section class="reviews">
             <div class="container reviews__content">
                 <h2 class="reviews__content-title">
@@ -47,200 +781,200 @@
                 </h2>
                 <div id="carouselExampleIndicators" class="carousel slide carousel-reviews">
                     <div class="carousel-indicators carousel-indicators-reviews">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div class="people">
-                            <div class="combination">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/victoria.png" srcset="./src/image/raster/section6-reviews/victoria.png 1x, ./src/image/raster/section6-reviews/victoria2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Victoria Dobrzhanska
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        I love this chocolate bar. Perfect combination <br>
-                                        of light crispy wafer, covered in a thin layer <br>
-                                        chocolate.
-                                    </p>
+                        <div class="carousel-item active">
+                            <div class="people">
+                                <div class="combination">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/victoria.png" srcset="./src/image/raster/section6-reviews/victoria.png 1x, ./src/image/raster/section6-reviews/victoria2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Victoria Dobrzhanska
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            I love this chocolate bar. Perfect combination <br>
+                                            of light crispy wafer, covered in a thin layer <br>
+                                            chocolate.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="combination combination-mobile-hidden">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/nazar.png" srcset="./src/image/raster/section6-reviews/nazar.png 1x, ./src/image/raster/section6-reviews/nazar2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Nazar Babenko
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        This chocolate confection is a delight! A <br>
-                                        delight! The wafer is light and crisp, the <br>
-                                        hazelnut cream is smooth, and the chocolate <br>
-                                        is good.
-                                    </p>
+                                <div class="combination combination-mobile-hidden">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/nazar.png" srcset="./src/image/raster/section6-reviews/nazar.png 1x, ./src/image/raster/section6-reviews/nazar2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Nazar Babenko
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            This chocolate confection is a delight! A <br>
+                                            delight! The wafer is light and crisp, the <br>
+                                            hazelnut cream is smooth, and the chocolate <br>
+                                            is good.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="combination combination-tablet-hidden combination-mobile-hidden">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/olena.png" srcset="./src/image/raster/section6-reviews/olena.png 1x, ./src/image/raster/section6-reviews/olena2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Olena Kampusch
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        Chocolate is a family favourite treat. Love the <br>
-                                        delicious smooth chocolate and the <br>
-                                        creaminess inside. The wafer is soft but <br>
-                                        crunchy.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="people">
-                            <div class="combination combination-tablet-hidden combination-mobile-hidden">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/victoria.png" srcset="./src/image/raster/section6-reviews/victoria.png 1x, ./src/image/raster/section6-reviews/victoria2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Victoria Dobrzhanska
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        I love this chocolate bar. Perfect combination <br>
-                                        of light crispy wafer, covered in a thin layer <br>
-                                        chocolate.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="combination">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/nazar.png" srcset="./src/image/raster/section6-reviews/nazar.png 1x, ./src/image/raster/section6-reviews/nazar2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Nazar Babenko
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        This chocolate confection is a delight! A <br>
-                                        delight! The wafer is light and crisp, the <br>
-                                        hazelnut cream is smooth, and the chocolate <br>
-                                        is good.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="combination combination-mobile-hidden">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/olena.png" srcset="./src/image/raster/section6-reviews/olena.png 1x, ./src/image/raster/section6-reviews/olena2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Olena Kampusch
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        Chocolate is a family favourite treat. Love the <br>
-                                        delicious smooth chocolate and the <br>
-                                        creaminess inside. The wafer is soft but <br>
-                                        crunchy.
-                                    </p>
+                                <div class="combination combination-tablet-hidden combination-mobile-hidden">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/olena.png" srcset="./src/image/raster/section6-reviews/olena.png 1x, ./src/image/raster/section6-reviews/olena2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Olena Kampusch
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            Chocolate is a family favourite treat. Love the <br>
+                                            delicious smooth chocolate and the <br>
+                                            creaminess inside. The wafer is soft but <br>
+                                            crunchy.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="people">
-                            <div class="combination combination-mobile-hidden">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/victoria.png" srcset="./src/image/raster/section6-reviews/victoria.png 1x, ./src/image/raster/section6-reviews/victoria2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Victoria Dobrzhanska
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        I love this chocolate bar. Perfect combination <br>
-                                        of light crispy wafer, covered in a thin layer <br>
-                                        chocolate.
-                                    </p>
+                        <div class="carousel-item">
+                            <div class="people">
+                                <div class="combination combination-tablet-hidden combination-mobile-hidden">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/victoria.png" srcset="./src/image/raster/section6-reviews/victoria.png 1x, ./src/image/raster/section6-reviews/victoria2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Victoria Dobrzhanska
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            I love this chocolate bar. Perfect combination <br>
+                                            of light crispy wafer, covered in a thin layer <br>
+                                            chocolate.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="combination combination-tablet-hidden combination-mobile-hidden">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/nazar.png" srcset="./src/image/raster/section6-reviews/nazar.png 1x, ./src/image/raster/section6-reviews/nazar2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Nazar Babenko
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        This chocolate confection is a delight! A <br>
-                                        delight! The wafer is light and crisp, the <br>
-                                        hazelnut cream is smooth, and the chocolate <br>
-                                        is good.
-                                    </p>
+                                <div class="combination">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/nazar.png" srcset="./src/image/raster/section6-reviews/nazar.png 1x, ./src/image/raster/section6-reviews/nazar2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Nazar Babenko
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            This chocolate confection is a delight! A <br>
+                                            delight! The wafer is light and crisp, the <br>
+                                            hazelnut cream is smooth, and the chocolate <br>
+                                            is good.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="combination">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/olena.png" srcset="./src/image/raster/section6-reviews/olena.png 1x, ./src/image/raster/section6-reviews/olena2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Olena Kampusch
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        Chocolate is a family favourite treat. Love the <br>
-                                        delicious smooth chocolate and the <br>
-                                        creaminess inside. The wafer is soft but <br>
-                                        crunchy.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="people">
-                            <div class="combination">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/victoria.png" srcset="./src/image/raster/section6-reviews/victoria.png 1x, ./src/image/raster/section6-reviews/victoria2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Victoria Dobrzhanska
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        I love this chocolate bar. Perfect combination <br>
-                                        of light crispy wafer, covered in a thin layer <br>
-                                        chocolate.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="combination combination-mobile-hidden">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/nazar.png" srcset="./src/image/raster/section6-reviews/nazar.png 1x, ./src/image/raster/section6-reviews/nazar2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Nazar Babenko
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        This chocolate confection is a delight! A <br>
-                                        delight! The wafer is light and crisp, the <br>
-                                        hazelnut cream is smooth, and the chocolate <br>
-                                        is good.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="combination combination-tablet-hidden combination-mobile-hidden">
-                                <div class="combination__content">
-                                    <img src="./src/image/raster/section6-reviews/olena.png" srcset="./src/image/raster/section6-reviews/olena.png 1x, ./src/image/raster/section6-reviews/olena2x.png 2x" alt="ups" class="combination__content-photo">
-                                    <h3 class="combination__content-title">
-                                        Olena Kampusch
-                                    </h3>
-                                    <p class="combination__content-text">
-                                        Chocolate is a family favourite treat. Love the <br>
-                                        delicious smooth chocolate and the <br>
-                                        creaminess inside. The wafer is soft but <br>
-                                        crunchy.
-                                    </p>
+                                <div class="combination combination-mobile-hidden">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/olena.png" srcset="./src/image/raster/section6-reviews/olena.png 1x, ./src/image/raster/section6-reviews/olena2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Olena Kampusch
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            Chocolate is a family favourite treat. Love the <br>
+                                            delicious smooth chocolate and the <br>
+                                            creaminess inside. The wafer is soft but <br>
+                                            crunchy.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
+                        <div class="carousel-item">
+                            <div class="people">
+                                <div class="combination combination-mobile-hidden">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/victoria.png" srcset="./src/image/raster/section6-reviews/victoria.png 1x, ./src/image/raster/section6-reviews/victoria2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Victoria Dobrzhanska
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            I love this chocolate bar. Perfect combination <br>
+                                            of light crispy wafer, covered in a thin layer <br>
+                                            chocolate.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="combination combination-tablet-hidden combination-mobile-hidden">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/nazar.png" srcset="./src/image/raster/section6-reviews/nazar.png 1x, ./src/image/raster/section6-reviews/nazar2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Nazar Babenko
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            This chocolate confection is a delight! A <br>
+                                            delight! The wafer is light and crisp, the <br>
+                                            hazelnut cream is smooth, and the chocolate <br>
+                                            is good.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="combination">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/olena.png" srcset="./src/image/raster/section6-reviews/olena.png 1x, ./src/image/raster/section6-reviews/olena2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Olena Kampusch
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            Chocolate is a family favourite treat. Love the <br>
+                                            delicious smooth chocolate and the <br>
+                                            creaminess inside. The wafer is soft but <br>
+                                            crunchy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="people">
+                                <div class="combination">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/victoria.png" srcset="./src/image/raster/section6-reviews/victoria.png 1x, ./src/image/raster/section6-reviews/victoria2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Victoria Dobrzhanska
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            I love this chocolate bar. Perfect combination <br>
+                                            of light crispy wafer, covered in a thin layer <br>
+                                            chocolate.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="combination combination-mobile-hidden">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/nazar.png" srcset="./src/image/raster/section6-reviews/nazar.png 1x, ./src/image/raster/section6-reviews/nazar2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Nazar Babenko
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            This chocolate confection is a delight! A <br>
+                                            delight! The wafer is light and crisp, the <br>
+                                            hazelnut cream is smooth, and the chocolate <br>
+                                            is good.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="combination combination-tablet-hidden combination-mobile-hidden">
+                                    <div class="combination__content">
+                                        <img src="./src/image/raster/section6-reviews/olena.png" srcset="./src/image/raster/section6-reviews/olena.png 1x, ./src/image/raster/section6-reviews/olena2x.png 2x" alt="ups" class="combination__content-photo">
+                                        <h3 class="combination__content-title">
+                                            Olena Kampusch
+                                        </h3>
+                                        <p class="combination__content-text">
+                                            Chocolate is a family favourite treat. Love the <br>
+                                            delicious smooth chocolate and the <br>
+                                            creaminess inside. The wafer is soft but <br>
+                                            crunchy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
                 </div>
                 <button type="button" class="reviews__content-button" data-bs-toggle="modal" data-bs-target="#reviewsModal">
@@ -248,75 +982,75 @@
                 </button>
                 <div class="modal fade" id="reviewsModal" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog">
-                      <div class="modal-content modal-content-reviews">
-                        <div class="modal-header modal-header-reviews">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body modal-body-reviews">
-                          <h3 class="modal-body-reviews__title">
-                            LEAVE A REVIEW ABOUT <span class="modal-body-reviews__title-orange">OUR CHOCOLATE</span>
-                          </h3>
-                          <form class="modal-body-reviews__form">
-                            <label for="modal-body-reviews__form-name" class="modal-body-reviews__form-box">
-                                <input type="text" class="modal-body-reviews__form-input" name="name" id="modal-body-reviews__form-name" placeholder="Name" required>
-                            </label>
-                            <label for="modal-body-reviews__form-email" class="modal-body-reviews__form-box">
-                                <input type="text" class="modal-body-reviews__form-input" name="name" id="modal-body-reviews__form-email" placeholder="Email" required>
-                            </label>
-                            <div class="modal-reviews-phone">
-                                <div class="modal-reviews-phone__country">
-                                    <svg class="modal-reviews-phone__country-photo">
-                                        <use href="/src/image/vector/icomoon/icon.svg#icon-ukraine-phone"></use>
-                                    </svg>
-                                    <p class="modal-reviews-phone__country-text">
-                                        +380
-                                    </p>
-                                </div>
-                                <label for="reviews-phone" class="modal-reviews-phone__box">
-                                    <input id="reviews-phone" class="modal-reviews-phone__input" name="text" placeholder="Phone number" required>
-                                </label>
+                        <div class="modal-content modal-content-reviews">
+                            <div class="modal-header modal-header-reviews">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <label for="reviews-comment" class="modal-body-reviews__form-box">
-                                <textarea class="modal-body-reviews__form-comment" name="text" id="reviews-comment" placeholder="Enter text"></textarea>
-                            </label>
-                            <button type="button" class="modal-body-reviews__form-button" data-bs-toggle="modal" data-bs-target="#sendModal">
-                                Send
-                            </button>
-                          </form>
+                            <div class="modal-body modal-body-reviews">
+                                <h3 class="modal-body-reviews__title">
+                                    LEAVE A REVIEW ABOUT <span class="modal-body-reviews__title-orange">OUR CHOCOLATE</span>
+                                </h3>
+                                <form class="modal-body-reviews__form">
+                                    <label for="modal-body-reviews__form-name" class="modal-body-reviews__form-box">
+                                        <input type="text" class="modal-body-reviews__form-input" name="name" id="modal-body-reviews__form-name" placeholder="Name" required>
+                                    </label>
+                                    <label for="modal-body-reviews__form-email" class="modal-body-reviews__form-box">
+                                        <input type="text" class="modal-body-reviews__form-input" name="name" id="modal-body-reviews__form-email" placeholder="Email" required>
+                                    </label>
+                                    <div class="modal-reviews-phone">
+                                        <div class="modal-reviews-phone__country">
+                                            <svg class="modal-reviews-phone__country-photo">
+                                                <use href="/src/image/vector/icomoon/icon.svg#icon-ukraine-phone"></use>
+                                            </svg>
+                                            <p class="modal-reviews-phone__country-text">
+                                                +380
+                                            </p>
+                                        </div>
+                                        <label for="reviews-phone" class="modal-reviews-phone__box">
+                                            <input id="reviews-phone" class="modal-reviews-phone__input" name="text" placeholder="Phone number" required>
+                                        </label>
+                                    </div>
+                                    <label for="reviews-comment" class="modal-body-reviews__form-box">
+                                        <textarea class="modal-body-reviews__form-comment" name="text" id="reviews-comment" placeholder="Enter text"></textarea>
+                                    </label>
+                                    <button type="button" class="modal-body-reviews__form-button" data-bs-toggle="modal" data-bs-target="#sendModal">
+                                        Send
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="modal-footer d-none">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
-                        <div class="modal-footer d-none">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
                     </div>
                 </div>
                 <div class="modal fade" id="sendModal" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog">
-                      <div class="modal-content modal-content-send">
-                        <div class="modal-header modal-header-send">
-                          <button type="button" class="btn-close cross-send" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-content modal-content-send">
+                            <div class="modal-header modal-header-send">
+                                <button type="button" class="btn-close cross-send" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body modal-body-send">
+                                <h3 class="modal-body-send__title">
+                                    thank you <br>
+                                    for your feedback!
+                                </h3>
+                                <p class="modal-body-send__text">
+                                    We are so happy to hear from you!
+                                </p>
+                            </div>
+                            <div class="modal-footer d-none">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
-                        <div class="modal-body modal-body-send">
-                          <h3 class="modal-body-send__title">
-                            thank you <br>
-                            for your feedback!
-                          </h3>
-                          <p class="modal-body-send__text">
-                            We are so happy to hear from you!
-                          </p>
-                        </div>
-                        <div class="modal-footer d-none">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- section 6 end -->
-        <!-- section 7 -->
+        <!-- section 7 end -->
+        <!-- section 8 -->
         <section class="explore">
             <div class="container explore__content">
                 <h2 class="explore__content-title">
@@ -334,35 +1068,36 @@
                 </button>
                 <div class="modal fade" id="exploreModal" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog">
-                      <div class="modal-content modal-content-explore">
-                        <div class="modal-header modal-header-explore">
-                          <button type="button" class="btn-close cross" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-content modal-content-explore">
+                            <div class="modal-header modal-header-explore">
+                                <button type="button" class="btn-close cross" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body modal-body-explore">
+                                <h3 class="modal-body-explore__title">
+                                    Explore our <br>
+                                    <span class="modal-body-explore__title-orange">new chocolate</span> first!
+                                </h3>
+                                <form class="modal-body-explore__form">
+                                    <label for="explore-email" class="modal-body-explore__form-box">
+                                        <input type="email" id="explore-email" class="modal-body-explore__form-input" placeholder="Enter your email" required>
+                                    </label>
+                                    <button class="modal-body-explore__form-button">
+                                        Submit
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="modal-footer d-none">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
-                        <div class="modal-body modal-body-explore">
-                          <h3 class="modal-body-explore__title">
-                            Explore our <br>
-                            <span class="modal-body-explore__title-orange">new chocolate</span> first!
-                          </h3>
-                          <form class="modal-body-explore__form">
-                            <label for="explore-email" class="modal-body-explore__form-box">
-                                <input type="email" id="explore-email" class="modal-body-explore__form-input" placeholder="Enter your email" required>
-                            </label>
-                            <button class="modal-body-explore__form-button">
-                                Submit
-                            </button>
-                          </form>
-                        </div>
-                        <div class="modal-footer d-none">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- section 7 end -->
+        <!-- section 8 end -->
     </main>
+    <!-- section 9 -->
     <footer class="footer">
         <div class="container footer__content">
             <div class="delicious">
@@ -429,9 +1164,11 @@
             </div>
         </div>
     </footer>
+    <!-- section 9 end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/main.js"></script>
 </body>
 </html>

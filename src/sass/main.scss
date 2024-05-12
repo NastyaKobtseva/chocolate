@@ -3,7 +3,6 @@
     margin: 0 auto;
     padding: 0 15px;
 }
-
 h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
 }
@@ -14,33 +13,31 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-@import "./components/header",
-"components/reviews", 
-"components/explore", 
-"components/footer", 
-"components/sellers";
-
-
-
-// @import "utils/mixins",
-// "utils/placeholders",
-// "utils/variable";
-
+@import 
+'utils/mixins',
+'utils/placeholders',
+'utils/variable';
+@import 
+'./components/header',
+'components/reviews', 
+'components/explore', 
+'components/footer', 
+'components/sellers', 
+'components/taste', 
+'components/our-products', 
+'components/modal-buy';
 @media (max-width: 1200px) {
     .container {
-        width: 768px;
+        width: 734px;
     }
 }
-
 @media (max-width: 768px) {
     .container {
         width: 480px;
     }
 }
-
 @media (max-width: 480px) {
     .container {
-        width: 320px;
+        width: 365px;
     }
 }

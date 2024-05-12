@@ -1,0 +1,326 @@
+.modal-buy {
+    &__content {
+        width: 609px;
+        padding: 48px;
+        border-radius: 15px;
+        background: $gentle-white-background;
+        position: relative;
+        @extend %position-center-column;
+        gap: 32px;
+    }
+    &__header {
+        @extend %position-center;
+    }
+    &__btn-close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+    }    
+}
+.buy-now {
+    @extend %position-center-column;
+        gap: 40px;
+    &__products-group {
+        @extend %position-center;
+        gap: 16px;
+    }
+    &__swiper {
+
+    }
+    &__registration {
+        @extend %position-center-column;
+        gap: 18px;
+    }
+    &__label-container {
+        @include flex-dop(center, start, column);
+        gap: 8px;
+    }
+    &__label-title {
+        color: $black-standard;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -0.28px;
+    }
+    &__input-group {
+        @extend %position-center;
+        gap: 21px;
+    }
+    &__info-input {
+        padding: 22px 24px;
+        width: 246px;
+        height: 66px;
+        color: rgba(64, 64, 64, 0.30);
+        @extend %main-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        border-radius: 13px;
+        border: 1.5px solid rgba(17, 17, 17, 0.05);
+        box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+        outline: none;
+        background: inherit;
+        &:focus-visible {
+            color: $black-paragraf;
+            border-color: $orange;
+        }
+    }
+    &__label {
+        @include flex-dop(center, start, column);
+        gap: 8px;
+        color: $black-standard;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -0.28px;
+    }
+    &__input {
+        width: 513px;
+        height: 66px;
+        padding: 22px 24px;
+        border-radius: 13px;
+        border: 1.5px solid rgba(17, 17, 17, 0.05);
+        color: rgba(64, 64, 64, 0.30);
+        @extend %main-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        outline: none;
+        background: inherit;
+        &:focus-visible {
+            color: $black-paragraf;
+            border-color: $orange;
+        }
+    }
+    &__tel-container {
+        width: 513px;
+        height: 66px;
+        padding: 17px 24px;
+        border-radius: 13px;
+        border: 1.5px solid rgba(17, 17, 17, 0.05);
+        @extend %position-center;
+        gap: 28px;
+    }
+    &__country-group {
+        @extend %position-center;
+        gap: 18px;
+        padding-right: 32px;
+        background: $gentle-white-background;
+        box-shadow: 1.5px 0px 0px 0px rgba(0, 0, 0, 0.10);
+    }
+    &__country-img {
+        width: 32px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+    &__country-number {
+        color: $black-standard;
+        @extend %main-font;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.36px;
+    }
+    &__input-tel {
+        width: 312px;
+        height: 32px;
+        outline: none;
+        border: none;
+        background: inherit;
+        color: rgba(64, 64, 64, 0.30);
+        @extend %main-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        &:focus-visible {
+            color: $black-paragraf;
+        }
+    }
+    &__input-card {
+        background-image: url("../image/vector/mastercard.svg");
+        background-repeat: no-repeat;
+        background-size: 44px 30px;
+        background-position: top 18px right 24px;
+    }
+    &__user-commit {
+        padding: 22px 24px;
+        width: 513px;
+        height: 137px;
+        border-radius: 13px;
+        border: 1.5px solid rgba(17, 17, 17, 0.05);
+        color: rgba(64, 64, 64, 0.30);
+        @extend %main-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        background: inherit;
+        outline: none;
+        &:focus-visible {
+            color: $black-paragraf;
+            border-color: $orange;
+        }
+    }
+    &__btn {
+        align-self: start;
+        padding: 14px 40px;
+        border-radius: 100px;
+        background: $orange;
+        color: $white-standart;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        border: none;
+        outline: none;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+    }
+}
+.product-card {
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: $white-standart;
+    &__label {
+        padding: 24px 20px 65px 20px;
+        width: 100%;
+        height: 100%;
+    }
+    &__image {
+        width: 120px;
+        height: 107px;
+    }
+    &__weight {
+        width: 96px;
+        height: 33px;
+        @extend %position-center;
+        position: absolute;
+        left: 50%;
+        bottom: 18px;
+        transform: translateX(-50%);
+        border-radius: 100px;
+        border: 1px solid rgba(17, 17, 17, 0.10);
+        background: $gentle-white-background;
+        color: $black-paragraf;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+    }
+    &__radio {
+        display: none;
+        &:checked ~ .product-card__weight {
+            background: $orange;
+            color: $white-standart;
+        }
+    }
+}
+@media (max-width: 734px ) {
+    .modal-buy {
+        &__content {
+            width: 311px;
+            padding: 32px 40px;
+        }
+        &__btn-close {
+            top: 14px;
+            right: 14px;
+        }    
+    }
+    .buy-now {
+        gap: 32px;
+        &__swiper {
+            width: 231px;
+            height: 284px;
+        }
+        &__label-title {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: -0.24px;
+        }
+        &__input-group {
+            @include flex-dop(center, start, column);
+            gap: 14px;
+        }
+        &__info-input {
+            padding: 14px 18px;
+            width: 263px;
+            height: 45px;
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+        &__label {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: -0.24px;
+        }
+        &__input {
+            width: 263px;
+            height: 45px;
+            padding: 14px 18px;
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+        &__tel-container {
+            width: 263px;
+            height: 45px;
+            padding: 10px 18px;
+            gap: 14px;
+        }
+        &__country-group {
+            gap: 8px;
+            padding-right: 8px;
+        }
+        &__country-img {
+            width: 24px;
+            height: 18px;
+        }
+        &__country-number {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+        &__input-tel {
+            width: 100%;
+            height: 25px;
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+        &__input-card {
+            background-size: 22px 13px;
+            background-position: top 12px right 19px;
+        }
+        &__user-commit {
+            padding: 14px 18px;
+            width: 263px;
+            height: 91px;
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+        &__btn {
+            padding: 12px 28px;
+        }
+    }
+    .product-card {
+        &__label {
+            padding: 32px 32px 77px 32px;
+        }
+        &__image {
+            width: 167px;
+            height: 148px;
+        }
+        &__weight {
+            bottom: 28px;
+        }
+    }
+}

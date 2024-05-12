@@ -1,0 +1,114 @@
+.our-products {
+    margin: 0;
+    padding: 64px 0;
+    &__content {
+        @extend %position-center-column;
+        gap: 50px;
+    }
+    &__swiper {
+        width: 100%;
+        height: 410px;
+    }
+    &__slide {
+        width: 1136px; 
+        @include flex(center, start);
+        gap: 18px;
+    }
+}
+.products-card {
+    box-sizing: content-box;
+    @extend %position-center-column;
+    padding: 32px 19px;
+    gap: 8px;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: $white-standart;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: translateY(5px);
+        & .products-card__price {
+            transition: all 0.3s ease-in-out;
+            background: $orange;
+            color: $white-standart;
+        }
+    }
+    &__tablet {
+        display: none;
+    }
+    &__image {
+        width: 230px;
+        height: 201px;
+        flex-shrink: 0;
+    }
+    &__info-box {
+        @extend %position-center-column;
+        gap: 18px;
+    }
+    &__text-group {
+        @extend %position-center-column;
+        gap: 2px;
+    }
+    &__title {
+        color: $black-paragraf;
+        @extend %main-font;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.36px;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        color: rgba(17, 17, 17, 0.70);
+        @extend %main-font;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: -0.24px;
+    }
+    &__price {
+        color: $black-paragraf;
+        @extend %main-font;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        padding: 8px 20px;
+        border-radius: 100px;
+        border: 1px solid rgba(17, 17, 17, 0.10);
+        background: $gentle-white-background;
+    }
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+}
+.swiper-pagination-bullet-active {
+    background: $orange;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -6px;
+}
+@media (max-width: 1024px ) {
+    .products-card {
+        &__tablet {
+            display: flex;
+        }
+        &__none {
+            display: none;
+        }
+    }
+    .our-products {
+        &__slide {
+            width: 734px;
+        } 
+    }
+}
+@media (max-width: 734px ) {
+    .container {
+        width: 365px; 
+    }
+    .our-products {
+        &__slide {
+            width: 365px;
+        } 
+    }
+}
