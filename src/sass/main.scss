@@ -18,14 +18,15 @@ a {
 'utils/placeholders',
 'utils/variable';
 @import 
-'./components/header',
+'components/header',
 'components/reviews', 
 'components/explore', 
 'components/footer', 
 'components/sellers', 
 'components/taste', 
 'components/our-products', 
-'components/modal-buy';
+'components/modal-buy', 
+'components/made';
 @media (max-width: 1200px) {
     .container {
         width: 734px;

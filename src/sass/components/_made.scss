@@ -1,0 +1,105 @@
+// @import "../utils/mixins", "../utils/placeholders", "../utils/variable";
+
+.made__content {
+    &-title {
+        color: $light-black-reviews;
+        text-align: center;
+        font-size: 24px;
+        @extend %font-family-style;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: -0.72px;
+        text-transform: uppercase;
+        padding: 0 0 50px 0;
+        &-orange {
+            color: $orange-reviews;
+        }
+    }
+}
+
+.balance {
+    flex-wrap: wrap;
+    @include flex-j-content($flex:flex, $js-content:center);
+    gap: 20px;
+    &__video {
+        width: 600px;
+        height: 400px;
+        border-radius: 15px;
+    }
+    &__video-mobile {
+        display: none;
+    }
+    &__content {
+        &-title {
+            color: $light-black-reviews;
+            font-size: 18px;
+            @extend %font-family-style;
+            font-weight: 600;
+            line-height: 24px;
+            padding: 0 0 28px 0;
+        }
+    }
+}
+
+.flavor__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &-item {
+        // list-style: outside;
+        display: flex;
+        position: relative;
+        padding: 0 0 0 20px;
+    }
+    &-text {
+        color: $light-black-reviews;
+        font-size: 14px;
+        @extend %font-family-style;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.28px;
+    }
+    &-circle {
+        width: 6px;
+        height: 6px;
+        background-color: $made-flavor;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 4px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .balance {
+        gap: 52px;
+    }
+    .balance__video {
+        width: 614px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .made__content-title {
+        font-size: 20px;
+    }
+    .balance {
+        gap: 40px;
+    }
+    .balance__video {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .balance__video {
+        display: none;
+    }
+    .balance__video-mobile {
+        width: 335px;
+        height: 500px;
+        display: block;
+    }
+}

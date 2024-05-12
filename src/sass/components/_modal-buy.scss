@@ -7,6 +7,8 @@
         position: relative;
         @extend %position-center-column;
         gap: 32px;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
     &__header {
         @extend %position-center;
@@ -26,9 +28,6 @@
     &__products-group {
         @extend %position-center;
         gap: 16px;
-    }
-    &__swiper {
-
     }
     &__registration {
         @extend %position-center-column;
