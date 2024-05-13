@@ -1055,7 +1055,7 @@ a {
   }
 }
 .taste {
-  padding: 128px 0 64px 0;
+  padding: 128px 0 128px 0;
 }
 .taste__content {
   gap: 50px;
@@ -1300,7 +1300,7 @@ a {
 }
 .our-products {
   margin: 0;
-  padding: 64px 0;
+  padding: 128px 0 0 0;
 }
 .our-products__content {
   gap: 50px;
