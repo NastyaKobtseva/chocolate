@@ -513,6 +513,10 @@ a {
 .explore__content {
   padding: 72px 0 72px 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .explore__content-title {
   color: white;
@@ -529,6 +533,7 @@ a {
   line-height: 18px;
   letter-spacing: -0.28px;
   padding: 24px 0 24px 0;
+  width: 467px;
 }
 .explore__content-button {
   color: white;
@@ -757,6 +762,9 @@ a {
     gap: 0;
     flex-wrap: wrap;
     position: relative;
+  }
+  .explore__content-text {
+    width: 326px;
   }
   .modal-body-explore__form-input {
     width: 286px;
@@ -1017,8 +1025,13 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .sellers {
+    margin: 72px 0 0 0;
+    padding: 0 0 72px 0;
+  }
   .sellers__content-title {
     font-size: 20px;
+    padding: 0 0 32px 0;
   }
   .discover {
     flex-direction: column;
@@ -1257,7 +1270,7 @@ a {
 }
 @media (max-width: 734px) {
   .taste {
-    padding: 72px 0 36px 0;
+    padding: 72px 0 72px 0;
   }
   .taste__content {
     gap: 32px;
@@ -1401,6 +1414,9 @@ a {
 @media (max-width: 734px) {
   .container {
     width: 365px;
+  }
+  .our-products {
+    padding: 92px 0 0 0;
   }
   .our-products__slide {
     width: 365px;
@@ -1751,6 +1767,7 @@ a {
   font-weight: 600;
   line-height: 24px;
   padding: 0 0 28px 0;
+  width: 350px;
 }
 
 .flavor__list {
@@ -1769,6 +1786,7 @@ a {
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
+  width: 436px;
 }
 .flavor__list-circle {
   width: 6px;
@@ -1792,6 +1810,13 @@ a {
 @media (max-width: 768px) {
   .made__content-title {
     font-size: 20px;
+    padding: 0 0 32px 0;
+  }
+  .flavor__list {
+    gap: 18px;
+  }
+  .flavor__list-text {
+    width: 464px;
   }
   .balance {
     gap: 40px;
@@ -1809,6 +1834,12 @@ a {
     width: 335px;
     height: 500px;
     display: block;
+  }
+  .balance__content-title {
+    width: 307px;
+  }
+  .flavor__list-text {
+    width: 291px;
   }
 }
 @media (max-width: 1200px) {

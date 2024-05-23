@@ -90,8 +90,13 @@
 }
 
 @media (max-width: 768px) {
+    .sellers {
+        margin: 72px 0 0 0;
+        padding: 0 0 72px 0;
+    }
     .sellers__content-title {
         font-size: 20px;
+        padding: 0 0 32px 0;
     }
     .discover {
         flex-direction: column;
