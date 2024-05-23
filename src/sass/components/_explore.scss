@@ -49,7 +49,7 @@
               left: 0;
               width: 100%;
               height: 100%;
-              background-color: $white-reviews;
+              background-color: $reviews-cross-send-bg;
               z-index: -1;
               transform: translateX(100%);
               transition: transform 0.3s linear;
@@ -60,7 +60,7 @@
             }
             &:hover {
               transform: scale(0.92);
-              color: $black-reviews;
+              color: $orange-reviews;
             }
         }
     }
@@ -292,5 +292,11 @@
             transform: scale(1.1);
             color: $white-reviews;
         }
+    }
+}
+
+@media (max-width: 365px) {
+    .explore__content-text {
+        width: 300px;
     }
 }

@@ -108,6 +108,7 @@
         width: 335px;
         height: 500px;
         display: block;
+        border-radius: 15px;
     }
     .balance__content-title {
         width: 307px;
@@ -116,5 +117,18 @@
         &-text {
             width: 291px;
         }
+    }
+}
+
+@media (max-width: 365px) {
+    .balance__video-mobile {
+        width: 314px;
+        height: 480px;
+    }
+    .balance__content-title {
+        width: 286px;
+    }
+    .flavor__list-text {
+        width: 244px;
     }
 }
