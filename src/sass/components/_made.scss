@@ -14,7 +14,6 @@
         }
     }
 }
-
 .balance {
     flex-wrap: wrap;
     @include flex-j-content($flex:flex, $js-content:center);
@@ -39,7 +38,6 @@
         }
     }
 }
-
 .flavor__list {
     display: flex;
     flex-direction: column;
@@ -69,7 +67,6 @@
         left: 4px;
     }
 }
-
 @media (max-width: 1200px) {
     .balance {
         gap: 52px;
@@ -79,7 +76,6 @@
         height: 400px;
     }
 }
-
 @media (max-width: 768px) {
     .made__content-title {
         font-size: 20px;
@@ -99,7 +95,6 @@
         height: 300px;
     }
 }
-
 @media (max-width: 480px) {
     .balance__video {
         display: none;
@@ -119,11 +114,10 @@
         }
     }
 }
-
 @media (max-width: 365px) {
     .balance__video-mobile {
-        width: 314px;
-        height: 480px;
+        width: 290px;
+        height: auto;
     }
     .balance__content-title {
         width: 286px;

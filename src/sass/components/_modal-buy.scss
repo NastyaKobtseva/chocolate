@@ -4,11 +4,12 @@
         padding: 48px;
         border-radius: 15px;
         background: $gentle-white-background;
-        position: relative;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
         @extend %position-center-column;
         gap: 32px;
-        left: 50%;
-        transform: translate(-50%, 0);
     }
     &__header {
         @extend %position-center;
@@ -180,10 +181,11 @@
         line-height: normal;
         border: none;
         outline: none;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.3s ease-in-out;
         &:hover {
-            opacity: 0.8;
-            transform: scale(1.1);
+            color: $orange;
+            background: $white-and-pink;
+            transform: scale(1);
         }
     }
 }
@@ -321,5 +323,110 @@
         &__weight {
             bottom: 28px;
         }
+    }
+}
+@media (max-width: 480px ) {
+    .modal-buy {
+        &__content {
+            width: 311px;
+            padding: 32px 40px;
+        }
+        &__btn-close {
+            top: 14px;
+            right: 14px;
+        }    
+    }
+    .buy-now {
+        gap: 32px;
+        &__swiper {
+            width: 231px;
+            height: 284px;
+        }
+        &__label-title {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: -0.24px;
+        }
+        &__input-group {
+            @include flex-dop(center, start, column);
+            gap: 14px;
+        }
+        &__info-input {
+            padding: 14px 18px;
+            width: 263px;
+            height: 45px;
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+        &__label {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: -0.24px;
+        }
+        &__input {
+            width: 263px;
+            height: 45px;
+            padding: 14px 18px;
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+        &__tel-container {
+            width: 263px;
+            height: 45px;
+            padding: 10px 18px;
+            gap: 14px;
+        }
+        &__country-group {
+            gap: 8px;
+            padding-right: 8px;
+        }
+        &__country-img {
+            width: 24px;
+            height: 18px;
+        }
+        &__country-number {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+        &__input-tel {
+            width: 100%;
+            height: 25px;
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+        &__input-card {
+            background-size: 22px 13px;
+            background-position: top 12px right 19px;
+        }
+        &__user-commit {
+            padding: 14px 18px;
+            width: 263px;
+            height: 91px;
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+        &__btn {
+            padding: 12px 28px;
+        }
+    }
+    .product-card {
+        &__label {
+            padding: 32px 32px 77px 32px;
+        }
+        &__image {
+            width: 167px;
+            height: 148px;
+        }
+        &__weight {
+            bottom: 28px;
+        }
+    }
+}
+@media (max-width: 370px ) {
+    .modal-buy {
+        &__content {
+            width: 290px;
+            padding: 32px 10px;
+        }   
     }
 }

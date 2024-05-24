@@ -129,17 +129,17 @@
     }
     .originates__text {
         position: absolute;
-        top: -592px;
+        top: -610px;
         width: 317px;
     }
 }
-
 @media (max-width: 365px) {
     .discover__photo {
-        width: 310px;
-        height: 444px;
+        width: 290px;
+        height: auto;
     }
     .originates__text {
-        width: 306px;
+        top: -515px;
+        width: 290px;
     }
 }
