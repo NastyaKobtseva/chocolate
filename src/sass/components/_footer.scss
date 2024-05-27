@@ -1,9 +1,14 @@
 .footer {
     background: $bg-footer;
+    &__content-line {
+        width: 1136px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.10);
+    }
 }
 .delicious {
     @include flex-j-content($flex:flex, $js-content:space-between);
-    padding: 50px 0px 0px;
+    padding: 50px 0 58px 0;
     &__title {
         color: $white-reviews;
         font-size: 28px;
@@ -11,6 +16,7 @@
         font-weight: 500;
         line-height: 34px;
         letter-spacing: -0.56px;
+        width: 300px;
         &-orange {
             color: $orange-reviews;
         }
@@ -83,7 +89,7 @@
     &__list {
         display: flex;
         gap: 24px;
-        padding: 82px 0 50px 0;
+        padding: 24px 0 50px 0;
         flex-wrap: wrap;
         &-link {
             color: $white-reviews;
@@ -107,18 +113,29 @@
 }
 
 @media (max-width: 1200px) {
+    .footer {
+        &__content-line {
+            width: 704px;
+        }
+    }
     .delicious {
-        gap: 290px;
+        gap: 124px;
+        padding: 50px 0 50px 0;
     }
     .simplychoc {
         gap: 30px;
     }
     .day-info__list {
-        padding: 74px 0 50px 0;
+        padding: 24px 0 50px 0;
     }
 }
 
 @media (max-width: 768px) {
+    .footer {
+        &__content-line {
+            width: 450px;
+        }
+    }
     .delicious__title {
         font-size: 24px;
     }
@@ -131,12 +148,34 @@
     }
     .day-info__list {
         gap: 18px;
-        padding: 64px 0 32px 0;
+        padding: 24px 0 50px 0;
         flex-direction: column;
     }
 }
 
 @media (max-width: 480px) {
+    .footer {
+        &__content-line {
+            width: 335px;
+        }
+    }
+    .delicious {
+        padding: 32px 0 32px 0;
+    }
+    .day-info__list {
+        padding: 32px 0 32px 0;
+    }
+    .simplychoc {
+        gap: 106px;
+    }
+}
+
+@media (max-width: 365px) {
+    .footer {
+        &__content-line {
+            width: 286px;
+        }
+    }
     .simplychoc {
         gap: 50px;
     }

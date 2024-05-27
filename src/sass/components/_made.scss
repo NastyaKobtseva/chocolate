@@ -1,19 +1,23 @@
-.made__content {
-    &-title {
-        color: $light-black-reviews;
-        text-align: center;
-        font-size: 24px;
-        @extend %font-family-style;
-        font-weight: 600;
-        line-height: 28px;
-        letter-spacing: -0.72px;
-        text-transform: uppercase;
-        padding: 0 0 50px 0;
-        &-orange {
-            color: $orange-reviews;
+.made {
+    padding: 64px 0 64px 0;
+    &__content {
+        &-title {
+            color: $light-black-reviews;
+            text-align: center;
+            font-size: 24px;
+            @extend %font-family-style;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: -0.72px;
+            text-transform: uppercase;
+            padding: 0 0 50px 0;
+            &-orange {
+                color: $orange-reviews;
+            }
         }
     }
 }
+
 .balance {
     flex-wrap: wrap;
     @include flex-j-content($flex:flex, $js-content:center);
@@ -43,7 +47,6 @@
     flex-direction: column;
     gap: 24px;
     &-item {
-        // list-style: outside;
         display: flex;
         position: relative;
         padding: 0 0 0 20px;
@@ -68,6 +71,9 @@
     }
 }
 @media (max-width: 1200px) {
+    .made {
+        padding: 36px 0 64px 0;
+    }
     .balance {
         gap: 52px;
     }
@@ -77,6 +83,9 @@
     }
 }
 @media (max-width: 768px) {
+    .made {
+        padding: 36px 0 36px 0;
+    }
     .made__content-title {
         font-size: 20px;
         padding: 0 0 32px 0;
