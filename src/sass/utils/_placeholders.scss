@@ -1,19 +1,65 @@
 %font-family-style {
-    font-family: "Montserrat";
-    font-style: normal;
+  font-family: "Montserrat";
+  font-style: normal;
 }
 %position-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 %position-center-column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 %main-font {
-    font-family: Montserrat;
-    font-style: normal;
+  font-family: Montserrat;
+  font-style: normal;
+}
+%head-button {
+  border-radius: 100px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 14px 40px;
+}
+%head-left-title {
+  color: white;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -0.84px;
+  width: 484px;
+  white-space: pre-wrap;
+}
+%benefits-title {
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 22px 0 18px 0;
+}
+%benefits-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  width: 308px;
+}
+%benefits-line {
+  width: 1px;
+  height: 124px;
+  background: rgba(255, 255, 255, 0.50);
+  align-self: center;
 }

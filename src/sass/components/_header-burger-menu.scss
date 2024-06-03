@@ -1,0 +1,135 @@
+input#toggle {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header__content-navigation-all {
+    display: none;
+  }
+  .label {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+  }
+  .label:hover {
+    cursor: pointer;
+  }
+  .label span {
+    top: 15px;
+  }
+  .label span,
+  .label span::before,
+  .label span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+  }
+  .label span::before {
+    top: -8px;
+  }
+  .label span::after {
+    top: 8px;
+  }
+  input[type="checkbox"]:checked ~ .header__content-navigation-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type="checkbox"]:checked ~ .label {
+    margin-left: 50rem;
+    position: absolute;
+  }
+  input[type="checkbox"]:checked ~ .label span::before {
+    background-color: $backgroun;
+    &:hover {
+      color: $header-button;
+    }
+  }
+  input[type="checkbox"]:checked ~ .label span::after {
+    background-color: $backgroun;
+    &:hover {
+      color: $header-button;
+    }
+  }
+  input[type="checkbox"]:checked ~ .label span {
+    transform: rotate(-45deg);
+  }
+  input[type="checkbox"]:checked ~ .label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  input[type="checkbox"]:checked ~ .label span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .header__content-navigation-all {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 290px;
+    height: 100%;
+    padding: 156px 40px 24px 40px;
+    right: 0;
+    background: $benefits-background;
+    &-first {
+      margin-bottom: auto;
+    }
+  }
+  .nav-list-link::after {
+    background: none;
+  }
+}
+
+@media (max-width: 990px) {
+  input[type="checkbox"]:checked ~ .label {
+    margin-left: 45rem !important;
+    position: absolute;
+  }
+}
+
+@media (max-width: 860px) {
+  input[type="checkbox"]:checked ~ .label {
+    margin-left: 40rem !important;
+    position: absolute;
+  }
+}
+
+@media (max-width: 768px) {
+  input[type="checkbox"]:checked ~ .label {
+    margin-left: 31rem !important;
+    position: absolute;
+  }
+}
+
+@media (max-width: 640px) {
+  input[type="checkbox"]:checked ~ .label {
+    margin-left: 25rem !important;
+    position: absolute;
+  }
+}
+
+@media (max-width: 486px) {
+  input[type="checkbox"]:checked ~ .label {
+    margin-left: 20rem !important;
+    position: absolute;
+  }
+}
+
+@media (max-width: 376px) {
+  input[type="checkbox"]:checked ~ .label {
+    margin-left: 15rem !important;
+    position: absolute;
+  }
+  .header__content-navigation-all {
+    right: 0;
+    width: 220px;
+  }
+}
