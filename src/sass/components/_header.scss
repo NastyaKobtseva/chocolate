@@ -119,6 +119,7 @@
     line-height: 18px; /* 128.571% */
     letter-spacing: -0.42px;
     margin-right: 14px;
+    white-space: pre;
   }
   &-button-scroll {
     display: flex;
@@ -159,7 +160,7 @@
 
 @media (max-width: 1170px) {
   .header__content-chocolate-left-block-title {
-    width: 370px;
+    width: 375px;
   }
 }
 

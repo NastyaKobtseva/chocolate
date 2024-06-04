@@ -25,9 +25,9 @@
 .benefits__content-blocks-mini3-text {
   @extend %benefits-text;
 }
-
-.benefits-line1 {
-    @extend %benefits-line;
+.benefits-line1,
+.benefits-line2 {
+  @extend %benefits-line;
 }
 
 @media (max-width: 1200px) {
@@ -36,7 +36,7 @@
   }
   .benefits__content-blocks {
     justify-content: start !important;
-    padding: 0 40px;
+    gap: 60px;
   }
   .benefits__content-blocks-mini1.me-4,
   .benefits__content-blocks-mini2.me-4,
@@ -45,7 +45,8 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-  .benefits-line1 {
+  .benefits-line1,
+  .benefits-line2 {
     display: none;
   }
 }
@@ -53,9 +54,7 @@
 @media (max-width: 992px) {
   .benefits__content-blocks {
     padding: 0px 35px;
-  }
-  .benefits__content-blocks-mini3 {
-    margin-top: 50px !important;
+    gap: 38px;
   }
 }
 
@@ -66,9 +65,6 @@
   .benefits__content-blocks {
     padding: 0px 1px;
     padding-top: 20px;
-  }
-  .benefits__content-blocks-mini2 {
-    margin-top: 50px !important;
   }
 }
 
