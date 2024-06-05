@@ -20,7 +20,6 @@
 
 .balance {
     flex-wrap: wrap;
-    @include flex-j-content($flex:flex, $js-content:center);
     gap: 20px;
     &__video {
         width: 600px;

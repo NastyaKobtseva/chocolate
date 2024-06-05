@@ -1,3 +1,7 @@
+body {
+  background: #FAFAFA;
+}
+
 .container {
   width: 1166px;
   margin: 0 auto;
@@ -318,7 +322,6 @@ a {
     padding: 0 20px;
     flex-direction: column;
     align-items: start !important;
-    width: 307px;
   }
   .header__content-chocolate-left-block-title {
     width: 224px !important;
@@ -544,7 +547,7 @@ input#toggle {
 }
 @media (max-width: 375px) {
   .benefits {
-    padding: 1px;
+    padding: 0;
   }
   .benefits__content-blocks {
     width: 244px;
@@ -2473,8 +2476,6 @@ input#toggle {
 
 .balance {
   flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
   gap: 20px;
 }
 .balance__video {
