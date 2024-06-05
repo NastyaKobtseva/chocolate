@@ -1349,8 +1349,6 @@ input#toggle {
 }
 
 .delicious {
-  display: flex;
-  justify-content: space-between;
   padding: 50px 0 58px 0;
 }
 .delicious__title {
